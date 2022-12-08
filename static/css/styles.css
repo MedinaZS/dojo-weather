@@ -1,0 +1,132 @@
+/* Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*Header Site*/
+.header-site{
+    background-color: #9fc5f8;
+    color: white;
+}
+
+.header-site .flex-container{
+    width: 1000px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.header-site .flex-container h1{
+    font-size: 2.2rem;
+}
+
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+
+/* Main Content*/
+main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*Header main content*/
+.header-content{
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+.header-content h1, .card-weather h2{
+    font-weight: normal;
+}
+
+/* Temperatures select*/
+#temperatures{
+    margin-left: 20px;
+    padding: 5px 0;
+    border: 2px solid black;
+}
+
+/* Contenedor de Pronosticos del tiempo */
+.weather-forecast{
+    padding: 20px 0;
+    gap: 20px;
+}
+
+/*Tarjetas de pronostico*/
+.card-weather{
+    background-color: #eeeeee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Imagenes del tiempo*/
+.weather-pic{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Min Max Temperaturas*/ 
+.min-max-temperatures{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.max-temperature,.min-temperature{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.max-temperature{
+    color: red;
+}
+
+.min-temperature{
+    color: #2b78e4;
+}
+
+
+/* Cookie policy message */
+.cookie-policy-message{
+    position: fixed;
+    bottom: 20px;
+
+    width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background-color: #eeeeee;
+    border: 1px solid black;
+}
+
+.bnt-cookies-accept{
+    width: 120px;
+    
+    padding: 2px 10px;
+    background-color: #9fc5f8;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+}

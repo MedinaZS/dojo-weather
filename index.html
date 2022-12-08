@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="header-site">
+        <div class="flex-container">
+            <!--Logo-->
+            <h1>DojoWeather</h1>
+            <!--Navegacion-->
+            <nav>
+                <a href="#" class="nav-link">Burbank</a>
+                <a href="#" class="nav-link">Chicago</a>
+                <a href="#" class="nav-link">Dallas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main Content-->
+    <main>
+        <!--Content Header-->
+        <header class="flex-container header-content">
+            <h1>San Jose</h1>
+            <!--Change Temperature-->
+            <div>
+                <span>show temperature in</span>
+                <select name="temperatures" id="temperatures" onchange="changeTemperature()">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </header>
+
+        <!--Weather Card Section-->
+        <section class="flex-container weather-forecast">
+            <!--Today Weather-->
+            <div class="card-weather">
+                <h2>Today</h2>
+
+                <img class="weather-pic" src="static/img/some_rain.png" alt="Some rain">
+
+                <p>some rain</p>
+                <div class="min-max-temperatures">
+                    <span class="max-temperature">
+                        <span class="temperature-value">24</span>°
+                    </span>
+                    <span class="min-temperature">
+                        <span class="temperature-value">18</span>°
+                    </span>
+                </div>
+            </div>
+
+            <!--Tomorrow Weather-->
+            <div class="card-weather">
+                <h2>Tomorrow</h2>
+
+                <img class="weather-pic" src="static/img/some_sun.png" alt="Some sun">
+
+                <p>some sun</p>
+                <div class="min-max-temperatures">
+                    <span class="max-temperature">
+                        <span class="temperature-value">27</span>°
+                    </span>
+                    <span class="min-temperature">
+                        <span class="temperature-value">19</span>°
+                    </span>
+                </div>
+            </div>
+
+            <!--Friday Weather-->
+            <div class="card-weather">
+                <h2>Friday</h2>
+                <img class="weather-pic" src="static/img/some_clouds.png" alt="Some clouds">
+                <p>some clouds</p>
+                <div class="min-max-temperatures">
+                    <span class="max-temperature">
+                        <span class="temperature-value">21</span>°
+                    </span>
+                    <span class="min-temperature">
+                        <span class="temperature-value">16</span>°
+                    </span>
+                </div>
+            </div>
+
+            <!--Saturday Weather-->
+            <div class="card-weather">
+                <h2>Saturday</h2>
+
+                <img class="weather-pic" src="static/img/some_sun.png" alt="Some sun">
+
+                <p>some sun</p>
+                <div class="min-max-temperatures">
+                    <span class="max-temperature">
+                        <span class="temperature-value">26</span>°
+                    </span>
+                    <span class="min-temperature">
+                        <span class="temperature-value">21</span>°
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!--Cookie policy message-->
+        <div class="cookie-policy-message">
+            <img src="static/img/cookie.png" alt="Cookies">
+            <div class="message">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personolize content ond ads, to provide social
+                    media features and to analyse our trafic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="bnt-cookies-accept" onclick="removeCookies()">I Accept</button>
+        </div>
+
+    </main>
+
+    <!--JS-->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
